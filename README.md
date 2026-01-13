@@ -83,21 +83,29 @@ Most restaurants maintain high ratings (4.0+), indicating consistent quality acr
 
 ### Excel Analysis
 ![Excel Pivot Table](outputs/excel_pivot_table.png)
-*Initial analysis in Excel showing category distribution*
+<p align="justify">
+  <em>Initial analysis in Excel shows the distribution of menu categories</em>
+</p>
 
 ### Python Visualizations
+
+#### Top 5 Most Mentioned Menu
 ![Top 5 Menus](outputs/top5_menus.png)
 *Top 5 most discussed menu items*
 
+#### Top 5 Most Popular Restaurants
 ![Top 5 Restaurants](outputs/top5_restaurants.png)
 *Top 5 Restaurant by total reviews*
 
+#### Menu Distribution Categories
 ![Category Distribution](outputs/category_distribution.png)
 *Menu distribution across categories*
 
+#### Price Segmentation
 ![Price Segmentation](outputs/price_segmentation.png)
 *Price range distribution of menus*
 
+#### Rating Distribution
 ![Rating Distribution](outputs/rating_distribution.png)
 *Rating distribution across all menus*
 
