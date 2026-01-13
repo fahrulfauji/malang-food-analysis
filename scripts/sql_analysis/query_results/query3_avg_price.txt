@@ -1,0 +1,29 @@
+==========================================
+QUERY 3: AVERAGE PRICE BY CATEGORY
+==========================================
+
+SQL QUERY:
+----------
+SELECT 
+    Kategori_Menu,
+    AVG(Harga_Rata_Rata) AS harga_rata_rata
+FROM restaurants
+GROUP BY Kategori_Menu;
+
+EXECUTION RESULT:
+-----------------
++---------------+-----------------+
+| Kategori_Menu | harga_rata_rata |
++---------------+-----------------+
+| Karbo			|	35334.8624	  |
+| Pendamping	|	32778.6260	  |
+| Protein		|	36651.5152	  |
++---------------+-----------------+
+
+
+ANALYSIS:
+---------
+• Most expensive category: Protein (Rp 36,652 average)
+• Cheapest category: Pendamping (Rp 32,779 average)  
+• Price difference: Rp 3,873 between most & least expensive
+• Protein menus command premium pricing

@@ -1,0 +1,29 @@
+==========================================
+QUERY 2: CATEGORY DISTRIBUTION
+==========================================
+
+SQL QUERY:
+----------
+SELECT 
+    Kategori_Menu,
+    COUNT(*) AS jumlah_menu
+FROM restaurants
+GROUP BY Kategori_Menu;
+
+EXECUTION RESULT:
+-----------------
++---------------+-------------+
+| Kategori_Menu | jumlah_menu |
++---------------+-------------+
+| Karbo			| 	109		  |
+| Pendamping	|	131		  |
+| Protein		|	132		  |
++---------------+-------------+
+
+
+ANALYSIS:
+---------
+• Most menus: Protein (132 items)
+• Least menus: Karbo (109 items)  
+• Distribution fairly balanced
+• Matches Excel pivot table results

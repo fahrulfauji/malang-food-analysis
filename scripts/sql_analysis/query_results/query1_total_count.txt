@@ -1,0 +1,22 @@
+==========================================
+QUERY 1: TOTAL DATA COUNT
+==========================================
+
+SQL QUERY:
+----------
+SELECT COUNT(*) AS total_menu FROM restaurants;
+
+EXECUTION RESULT:
+-----------------
++------------+
+| total_menu |
++------------+
+|        376 |
++------------+
+
+
+ANALYSIS:
+---------
+• Total menu items in database: 372
+• Matches Excel data count (372 rows)
+• Data import successful and complete
