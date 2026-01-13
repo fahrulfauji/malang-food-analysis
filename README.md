@@ -150,7 +150,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👨‍💻 Author
 **Fahrul Fauji**  
-- IT Graduate | Published Researcher (SINTA 4)  
+- Fresh Graduate IT | Published Researcher (SINTA 4)  
 - [GitHub](https://github.com/fahrulfauji)  
 - [LinkedIn](https://www.linkedin.com/in/fahrul-fauji-6729b8383/)  
 - Research Publication: [Journal of Information System Research (JOSH) ](https://doi.org/10.47065/josh.v6i3.6959)
