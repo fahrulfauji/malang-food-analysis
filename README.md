@@ -43,7 +43,7 @@ malang-food-analysis/
 ## 📈 Analysis Process
 
 ### Phase 1: Excel Data Processing
-- Manual data collection from Google Maps (376 data points)
+- Manual data collection from Google Maps (372 data points)
 - Price standardization and conversion to Rupiah
 - Menu categorization (Protein, Karbo, Pendamping)
 - Initial analysis with pivot tables and charts
