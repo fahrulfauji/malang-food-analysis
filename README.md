@@ -89,8 +89,8 @@ Most restaurants maintain high ratings (4.0+), indicating consistent quality acr
 ![Top 5 Menus](outputs/top5_menus.png)
 *Top 5 most discussed menu items*
 
-![Top 5 Restaurants](outputs/top5_resturants.png)
-*Top 5 restaurants by total reviews*
+![Top 5 Restaurants](outputs/top5_restaurants.png)
+*Top 5 Restaurant by total reviews*
 
 ![Category Distribution](outputs/category_distribution.png)
 *Menu distribution across categories*
