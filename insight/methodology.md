@@ -6,11 +6,11 @@
 - **Source**: Google Maps restaurant listings
 - **Method**: Manual data extraction
 - **Scope**: Kota Malang (5 kecamatan (subdistrict))
-- **Timeframe**: January 2026
+- **Timeframe**: September 2025
 - **Sample Size**: 89 restaurants, 372 menu items
 
 ### 2. Data Variables Collected
-+-----------------+------------------+--------------------------------------+
+
 | Variable        |       Type 		 |              Description 		    |
 |-----------------|------------------|--------------------------------------|
 | Restaurant Name | Text             | Name of eating establishment 		|
@@ -21,7 +21,7 @@
 | Rating          | Decimal          | Average rating (1-5 scale) 		    |
 | Price Range     | Text             | Minimum and maximum price 			|
 | Category        | Text             | Menu classification 					|
-+-----------------+------------------+--------------------------------------+
+
 ### 3. Analysis Framework
 
 #### Phase 1: Descriptive Analysis
