@@ -113,5 +113,3 @@ This project represents the initial stages of the data analysis learning journey
 
 **Project completed: January 2026**
 **Tools: Python | Excel | MySQL**
-
----
