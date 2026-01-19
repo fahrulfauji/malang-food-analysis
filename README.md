@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 📊 Project Overview
-End-to-end data analysis project analyzing 372 menu items from 89 restaurants in Malang, Indonesia. Data was manually collected from Google Maps and analyzed using Excel, MySQL, and Python.
+This is my first end-to-end data analysis project analyzing 372 menu items from 89 restaurants in Malang, Indonesia. Data was manually collected from Google Maps and analyzed using Excel, MySQL, and Python.
 
 ## 🎯 Project Objectives
 1. Identify the most popular food menus in Malang
@@ -35,7 +35,7 @@ malang-food-analysis/
 |------|---------|---------|----------------|
 | **Microsoft Excel** | Office LTSC 2024 | Data cleaning, initial analysis | Intermediate |
 | **MySQL** | Workbench 8.0 CE | Database management, SQL queries | Beginner |
-| **Python** | 3.13.7 | Advanced analysis & visualization | Beginner |
+| **Python** | 3.13.7 | Data analysis & visualization | Beginner |
 | **pandas** | 2.3.3 | Data manipulation in Python | Beginner |
 | **matplotlib** | 3.10.8 | Basic data visualization | Beginner |
 | **seaborn** | 0.13.2 | Enhanced visualization styling | Beginner |
@@ -48,7 +48,7 @@ malang-food-analysis/
 - Menu categorization (Protein, Karbo, Pendamping)
 - Initial analysis with pivot tables and charts
 
-### Phase 2: MySQL Database Analysis
+### Phase 2: MySQL Database Analysis (This project focuses on basic SQL aggregation and filtering, as the dataset consists of a single table)
 - Database schema design and creation
 - CSV data import to MySQL
 - 5 basic SQL queries for insights
@@ -172,8 +172,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🔗 Quick Links
 - [View Full Code on GitHub](https://github.com/fahrulfauji/malang-food-analysis)
-- [Download Project Files](#)
-- [Contact Author](#)
+
 
 **⭐ If you find this project helpful, please give it a star on GitHub!**
 
