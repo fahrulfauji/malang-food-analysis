@@ -1,87 +1,87 @@
 # 🔬 Methodology (Beginner Data Analysis Project)
 
 ## Project Purpose
-Project ini dibuat sebagai **latihan end-to-end data analysis**, mulai dari pengumpulan data manual hingga penarikan insight sederhana.
+This project was created as an end-to-end data analysis exercise, from manual data collection to simple insights.
 
 ---
 
 ## Data Collection
 - **Source**: Google Maps (public data)
 - **Method**: Manual data collection
-- **Location**: Kota Malang
+- **Location**: Malang City
 - **Period**: January 2026
-- **Dataset Size**:  
-  - 89 restaurants  
-  - 372 menu items
+- **Dataset Size**:
+- 89 restaurants
+- 372 menu items
 
 ---
 
 ## Variables Collected
 
-| Column Name      | Description |
+| Column Name | Description |
 |------------------|------------|
-| Restaurant Name  | Nama restoran |
-| Subdistrict      | Kecamatan |
-| Menu Item        | Nama menu |
-| Menu Reviews     | Jumlah review menu |
-| Total Reviews    | Total review restoran |
-| Rating           | Rating Google Maps |
-| Price Range      | Rentang harga menu |
-| Category         | Kategori menu |
+| Restaurant Name |
+| Subdistrict | District |
+| Menu Item | Menu Name |
+| Menu Reviews | Number of Menu Reviews |
+| Total Reviews | Total Restaurant Reviews |
+| Rating | Google Maps Rating |
+| Price Range | Menu Price Range |
+| Category | Menu Category |
 
 ---
 
 ## Analysis Steps
 
 ### 1. Data Cleaning
-- Standarisasi teks
-- Pemeriksaan nilai kosong
-- Validasi rentang harga dan rating
+- Text standardization
+- Null value check
+- Price range and rating validation
 
 ### 2. Exploratory Data Analysis (EDA)
-- Distribusi harga
-- Distribusi kategori menu
-- Analisis rating dan review
-- Perbandingan sederhana antar kategori
+- Price distribution
+- Menu category distribution
+- Rating and review analysis
+- Simple comparison between categories
 
 ### 3. Insight Generation
-- Interpretasi visual
-- Ringkasan pola umum
-- Insight bisnis dasar
+- Visual interpretation
+- Summary of common patterns
+- Basic business insights
 
 ---
 
 ## Tools Used
 
 ### Excel
-- Cleaning awal
+- Initial cleaning
 - Pivot table
-- Visualisasi dasar
+- Basic visualization
 
 ### SQL (MySQL)
-- Import CSV
-- Query dasar (SELECT, GROUP BY, ORDER BY)
+- CSV import
+- Basic queries (SELECT, GROUP BY, ORDER BY)
 - Aggregation functions
 
 ### Python
-- pandas untuk EDA
-- matplotlib & seaborn untuk visualisasi
-- numpy untuk operasi numerik sederhana
+- pandas for EDA
+- matplotlib & seaborn for visualization
+- numpy for simple numeric operations
 
 ---
 
 ## Limitations
-- Analisis bersifat deskriptif
-- Dataset hanya satu tabel
-- Tidak menggunakan advanced statistics atau machine learning
+- Analysis is descriptive
+- Dataset is only one table
+- No advanced statistics or machine learning Learning
 
 ---
 
 ## Learning Outcome
-Project ini menunjukkan:
-- Pemahaman dasar workflow data analysis
-- Kemampuan menggabungkan Excel, SQL, dan Python
-- Dokumentasi proses analisis secara terstruktur
+This project demonstrates:
+- Basic understanding of data analysis workflow
+- Ability to combine Excel, SQL, and Python
+- Structured documentation of the analysis process
 
 ---
 
