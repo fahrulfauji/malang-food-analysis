@@ -1,52 +1,67 @@
-# 🔍 Key Findings & Insights (Beginner Data Analysis)
+# 🔍 Key Findings & Insights
 
-## Project Overview
-This dataset contains 372 menu items from 89 restaurants in Malang City, manually collected from Google Maps.
+## 📊 Project Overview
 
-The analysis was conducted to practice exploratory data analysis (EDA) and basic business interpretation.
+This dataset contains 372 menu items from 89 restaurants in Malang City, collected from publicly available information on Google Maps.
+
+The analysis focuses on identifying culinary patterns, customer engagement behavior, pricing characteristics, and restaurant rating trends within Malang’s culinary market.
 
 ---
 
-## Main Findings
+## 📌 Main Findings
 
-### 1. Customer Preferences (Based on Reviews)
-- Complementary menu items such as chili sauce frequently appear in reviews, indicating their role in customer satisfaction.
-- Seafood-themed restaurants have a relatively high number of reviews.
-- The majority of menu items are priced below Rp 50,000.
+### 1. Customer Preference Patterns
+
+- Complementary menu items such as sambal frequently appear in customer discussions, suggesting that side dishes contribute significantly to overall dining satisfaction.
+
+- Seafood-themed restaurants show relatively high review volumes, indicating strong customer interest and engagement within this category.
+
+- The majority of menu items are priced below Rp50,000, highlighting the importance of affordability within Malang’s culinary ecosystem.
 
 ---
 
 ### 2. Pricing & Rating Observations
-- Most restaurants have ratings above 4.0.
-- No strong correlation was found between menu prices and ratings in this simple analysis.
-- Higher prices do not always translate to higher ratings.
+
+- Most restaurants maintain ratings above 4.0, indicating relatively consistent customer satisfaction across the sampled establishments.
+
+- No significant relationship was observed between menu pricing and restaurant ratings within this dataset.
+
+- Higher pricing does not necessarily correspond to higher customer satisfaction, suggesting that factors beyond price may influence customer perception and experience.
 
 ---
 
-### 3. Category Distribution
-- The menu is fairly evenly distributed between:
-- Side dishes / protein
-- Carbohydrates
-- Complements / side dishes
-- This indicates that menu variation is a common practice.
+### 3. Menu Category Distribution
+
+The dataset shows a relatively balanced distribution across menu categories:
+
+- Protein-based menus
+- Carbohydrate-based menus
+- Complementary / side-dish menus
+
+This distribution suggests that menu diversity is a common characteristic among restaurants included in the analysis.
 
 ---
 
-## What This Project Demonstrates
+## 🚀 Analytical Contributions
 
-Through this analysis, the project demonstrates the ability to:
-- Clean and understand the dataset
-- Use Pandas for data exploration
-- Create simple visualizations
-- Draw basic insights from the data
+Through this project, the analysis demonstrates the ability to:
 
----
-
-## Limitations
-- The dataset is a snapshot (not time-series)
-- The data comes from Google Maps, potentially biased
-- The analysis is still at a descriptive level
+- Perform data cleaning and preprocessing
+- Conduct exploratory data analysis (EDA)
+- Use SQL for aggregation and filtering
+- Generate visualizations using Python
+- Translate raw data into business-oriented insights
+- Document a structured end-to-end analytical workflow
 
 ---
 
-*This project focuses on learning data analysis fundamentals rather than delivering definitive business conclusions.*
+## ⚠️ Limitations
+
+- The dataset represents a snapshot rather than time-series data.
+- The data was collected from publicly available Google Maps information and may contain platform-related bias.
+- The analysis is limited to descriptive and exploratory techniques.
+- Advanced statistical modeling and predictive analysis were not included within the scope of this project.
+
+---
+
+*This document is part of the Malang Food Analysis portfolio project.*
