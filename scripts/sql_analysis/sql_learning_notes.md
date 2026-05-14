@@ -279,5 +279,3 @@ Rather than focusing on complex techniques immediately, I focused on:
 ---
 
 *This document reflects a beginner-level SQL learning journey built through a real exploratory data analysis project.*
-
-```
