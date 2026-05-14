@@ -236,14 +236,14 @@ data/processed/
 # 🖼️ Excel Analysis Screenshots
 
 ### Pivot Table Summary
-![Excel Pivot Table](excel_screenshots/04_pivot_table_results.png)
+![Excel Pivot Table](excel_screenshot/04_pivot_table_results.png)
 
 *Pivot table summary showing menu distribution, total reviews, and average prices.*
 
 ---
 
 ### Pie Chart Visualization
-![Excel Pie Chart](excel_screenshots/05_pie_chart_excel.png)
+![Excel Pie Chart](excel_screenshot/05_pie_chart_excel.png)
 
 *Pie chart visualization of menu category distribution created in Microsoft Excel.*
 
