@@ -1,0 +1,59 @@
+=========================================================
+QUERY 4 — TOP 5 RESTAURANTS BY TOTAL REVIEWS
+=========================================================
+
+Objective:
+Identify restaurants with the highest total review volume.
+
+---------------------------------------------------------
+SQL QUERY
+---------------------------------------------------------
+
+SELECT
+    Nama_Tempat AS restaurant_name,
+    MAX(Jumlah_Total_Ulasan) AS total_reviews,
+    ROUND(AVG(Rating), 2) AS average_rating
+FROM restaurants
+GROUP BY Nama_Tempat
+ORDER BY total_reviews DESC
+LIMIT 5;
+
+---------------------------------------------------------
+EXECUTION RESULT
+---------------------------------------------------------
+
++-------------------------------+---------------+----------------+
+| restaurant_name               | total_reviews | average_rating |
++-------------------------------+---------------+----------------+
+| Ocean Garden Stasiun          | 10436         | 4.60           |
+| Ocean Garden Soekarno Hatta   | 9111          | 4.60           |
+| Warung Lesehan Yogyakarta     | 8850          | 4.50           |
+| Rawon Nguling                 | 7866          | 4.50           |
+| Rawon Rampal                  | 6668          | 4.50           |
++-------------------------------+---------------+----------------+
+
+---------------------------------------------------------
+RESULT SUMMARY
+---------------------------------------------------------
+
+• Ocean Garden restaurants appear in the top two positions
+• All restaurants in the ranking maintain ratings above 4.5
+• Review counts vary significantly across restaurants
+
+---------------------------------------------------------
+BASIC INTERPRETATION
+---------------------------------------------------------
+
+Several restaurants within the dataset show relatively high
+customer review activity while maintaining consistently high ratings.
+
+This may indicate strong visibility and customer engagement
+within the sampled restaurant data.
+
+---------------------------------------------------------
+NOTE
+---------------------------------------------------------
+
+Review volume does not necessarily represent overall business
+performance or customer loyalty, since the analysis is limited
+to publicly available Google Maps data.

@@ -1,115 +1,90 @@
 # 📓 Notebooks Folder
 
-This folder is reserved for Jupyter Notebooks, especially if interactive analysis or advanced exploration is required.
+This folder is reserved for future Jupyter Notebook exploration and interactive analysis.
 
-In this project, most of the analysis was conducted using Python scripts (.py), while the notebooks folder is reserved for later development.
+In this project, most analyses were performed using structured Python scripts located in:
 
----
+```text
+scripts/python_visualization/
+````
 
-## Project Structure Overview
-
-The analysis in this project was conducted using:
-
-- Python scripts → `scripts/python_visualization/`
-- SQL files → `scripts/sql_analysis/`
-- Excel documentation → `scripts/excel_cleaning/`
-
-This approach was chosen to practice a structured and reproducible analysis workflow.
+The notebook environment is planned for future experimentation and learning purposes.
 
 ---
 
-## Why Python Scripts Instead of Notebooks?
+# 📌 Current Workflow
 
-As a beginner in data analysis, I chose to use Python scripts first before moving on to Jupyter Notebooks.
+This project currently uses:
 
-Reasons:
+* Excel → data cleaning and preprocessing
+* MySQL → exploratory querying and aggregation
+* Python scripts → visualization and insight generation
 
-### 1. Clear Structure & Discipline
-- Scripts encourage a clear execution flow
-- Helps develop a habit of writing clean and modular code
-- Avoids random cell execution (hidden state)
+Main analysis files:
 
-### 2. Version Control Friendly
-- Easier to track in Git
-- Code changes are clearly visible in commits
-- Avoids notebook file conflicts
-
-### 3. Reproducibility
-- Scripts can be rerun from scratch
-- Doesn't rely on interactive state
-- Closer to the workflow in a real-world environment
-
-### 4. Learning Focus
-- Focus on Python fundamentals (pandas, numpy, visualization)
-- Practice analytical logic, not just visual exploration
-- Build coding habits before interactive exploration
+```text
+scripts/python_visualization/basic-analysis.py
+scripts/sql_analysis/simple_queries.sql
+scripts/excel_cleaning/data_cleaning_step.md
+```
 
 ---
 
-## Analysis Files Location
+# 🎯 Why I Used Python Scripts First
 
-### Python Analysis
-- `scripts/python_visualization/simple_analysis.py`
-→ Main script for analysis and visualization
-- `scripts/python_visualization/requirements.txt` 
-→ Dependency list
+As part of my learning journey in data analysis, I chose to focus on Python scripts before using Jupyter Notebooks extensively.
 
-### SQL Analysis
-- `scripts/sql_analysis/database_schema.sql`
-- `scripts/sql_analysis/simple_queries.sql`
-- `scripts/sql_analysis/import_instructions.md`
+This approach helped me practice:
 
-### Excel Processing
-- `scripts/excel_cleaning/data_cleaning_steps.md`
+* writing structured code,
+* understanding execution flow,
+* organizing analysis files,
+* and building reproducible workflows.
 
----
+It also helped me become more familiar with:
 
-## When Would I Use Jupyter Notebooks?
-
-Jupyter Notebooks will be used when:
-
-- Initial Exploratory Data Analysis (EDA)
-- Visualization experiments
-- Tutorials or learning documentation
-- Analysis requiring interactive narrative
+* pandas,
+* matplotlib,
+* seaborn,
+* and basic analytical scripting practices.
 
 ---
 
-## Future Use of This Folder
+# 🚀 Future Plans for This Folder
 
-The `notebooks/` folder is set up for:
+The `notebooks/` folder may later contain:
 
-1. Advanced exploratory analysis
-2. Practice intermediate–advanced pandas
-3. SQL + Python integration
-4. Learning notebooks
-5. Future machine learning experiments
-
----
-
-## Project Outputs
-
-This project produces:
-
-- Python visualizations in the `outputs/` folder
-- SQL queries and their results
-- Business insights in the `insights/` folder
-- Complete documentation of the analysis process
+* exploratory data analysis (EDA),
+* visualization experiments,
+* SQL + Python integration practice,
+* learning notebooks,
+* and more advanced analysis projects.
 
 ---
 
-## Learning Path
+# 📊 Project Outputs
 
-This project represents the initial stages of the data analysis learning journey:
+This project currently produces:
 
-1. Script-based analysis (current focus)
-2. Exploratory analysis with notebooks
-3. Combining scripts & notebooks
-4. More advanced analysis techniques
+* cleaned datasets,
+* SQL query analysis,
+* Python visualizations,
+* and business-oriented insights.
+
+Generated outputs are stored in:
+
+```text
+outputs/
+```
 
 ---
 
-*This repository is a beginner-level data analysis portfolio project, focused on building strong analytical foundations.*
+# 📝 Learning Note
 
-**Project completed: January 2026**
-**Tools: Python | Excel | MySQL**
+This repository represents a beginner-to-intermediate level data analysis portfolio project focused on building practical analytical foundations through hands-on learning.
+
+---
+
+**Project:** Malang Food Analysis
+**Tools:** Excel, MySQL, Python
+**Project Period:** January 2026

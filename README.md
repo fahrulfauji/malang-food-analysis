@@ -1,4 +1,4 @@
-# 🍽️ Malang Food Analysis - Data Analysis Portfolio Project
+# 🍽️ Malang Food Analysis — Exploratory Data Analysis Portfolio Project
 
 ![Python](https://img.shields.io/badge/Python-3.13.7-blue)
 ![Excel](https://img.shields.io/badge/Excel-Office%20LTSC%202024-green)
@@ -9,28 +9,36 @@
 
 ## 📊 Project Overview
 
-This project analyzes food trends and restaurant popularity in Malang, Indonesia, using data collected from publicly available information on Google Maps.
+This project explores culinary trends and restaurant characteristics in Malang City, Indonesia, using data collected manually from publicly available Google Maps information.
 
-The analysis focuses on identifying consumer preferences, restaurant performance patterns, pricing behavior, and menu category trends within Malang’s culinary market.
+The analysis focuses on:
+- menu category distribution,
+- restaurant review activity,
+- pricing patterns,
+- and rating distribution.
 
-This project also demonstrates a complete end-to-end data analysis workflow using Excel, MySQL, and Python — from manual data collection and cleaning to exploratory analysis, visualization, and business insight generation.
+This portfolio project also demonstrates an end-to-end exploratory data analysis workflow using:
+- Microsoft Excel,
+- MySQL,
+- and Python.
 
-**Dataset Scope**
-- 372 menu items
-- 89 restaurants
-- Multiple food categories and price segments
-- Review and rating-based analysis
+The workflow covers:
+- manual data collection,
+- data cleaning,
+- exploratory analysis,
+- visualization,
+- and basic business-oriented insight generation.
 
 ---
 
 ## 🎯 Project Objectives
 
-1. Identify dominant food preferences among consumers in Malang
-2. Analyze restaurant popularity using review and rating metrics
+1. Analyze menu category distribution within Malang’s culinary market
+2. Identify restaurants with high review activity
 3. Explore pricing patterns across menu categories
-4. Understand menu distribution and customer discussion trends
-5. Demonstrate an end-to-end data analysis workflow using Excel, MySQL, and Python
-6. Generate business-oriented insights from culinary market data
+4. Analyze restaurant rating distribution
+5. Practice an end-to-end exploratory data analysis workflow
+6. Translate raw culinary data into structured insights
 
 ---
 
@@ -38,161 +46,198 @@ This project also demonstrates a complete end-to-end data analysis workflow usin
 
 ```text
 malang-food-analysis/
-├── data/                          # Raw and processed datasets
-│   ├── raw/                       # Original Excel files
+├── data/
+│   ├── raw/                       # Original datasets
 │   └── processed/                 # Cleaned CSV datasets
-├── scripts/                       # Analysis scripts and documentation
-│   ├── excel_cleaning/            # Excel preprocessing documentation
-│   ├── sql_analysis/              # MySQL database and SQL queries
-│   └── python_visualization/      # Python analysis and visualizations
-├── outputs/                       # Generated charts and visual outputs
-├── insights/                      # Findings and recommendations
-├── README.md                      # Project documentation
+│
+├── scripts/
+│   ├── excel_cleaning/            # Excel preprocessing workflow
+│   ├── sql_analysis/              # SQL schema and exploratory queries
+│   └── python_visualization/      # Python analysis and visualization
+│
+├── outputs/                       # Exported charts and visualizations
+├── insights/                      # Findings and business recommendations
+├── README.md                      # Main project documentation
 └── requirements.txt               # Python dependencies
-```
+````
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ Tools & Technologies
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| **Microsoft Excel** | Office LTSC 2024 | Data cleaning and initial preprocessing |
-| **MySQL** | Workbench 8.0 CE | Data querying and aggregation |
-| **Python** | 3.13.7 | Data analysis and visualization |
-| **pandas** | 2.3.3 | Data manipulation |
-| **matplotlib** | 3.10.8 | Data visualization |
-| **seaborn** | 0.13.2 | Statistical visualization styling |
+| Tool            | Purpose                         |
+| --------------- | ------------------------------- |
+| Microsoft Excel | Data cleaning and preprocessing |
+| MySQL           | Exploratory SQL analysis        |
+| Python          | Data analysis and visualization |
+| pandas          | Data manipulation               |
+| matplotlib      | Visualization                   |
+| seaborn         | Visualization styling           |
 
 ---
 
-## 📈 Analysis Process
+## 📈 Analysis Workflow
 
-### Phase 1: Excel Data Processing
-- Manual collection of culinary data from publicly available Google Maps information
-- Price standardization and currency formatting
-- Menu categorization into:
-  - Protein
-  - Karbo
-  - Pendamping
-- Initial exploratory analysis using pivot tables and charts
+### 1. Excel Data Cleaning & Preparation
 
-### Phase 2: MySQL Database Analysis
-- Database schema creation and table setup
-- CSV dataset import into MySQL
-- SQL-based exploratory analysis using:
-  - aggregation
-  - filtering
-  - grouping
-  - ranking queries
-- Query result documentation and interpretation
+The Excel stage included:
 
-### Phase 3: Python Visualization & Insight Generation
-- Dataset loading and exploration using pandas
-- Data visualization using matplotlib and seaborn
-- Trend and distribution analysis
-- Business insight generation from visualization results
-- Exporting charts for reporting and presentation purposes
+* manual data recording,
+* price standardization,
+* menu categorization,
+* and initial exploratory analysis using pivot tables.
+
+Menu categories were grouped into:
+
+* Protein
+* Karbo
+* Pendamping
+
+---
+
+### 2. SQL Exploratory Analysis
+
+MySQL was used to:
+
+* create database schema,
+* import cleaned CSV data,
+* perform aggregation queries,
+* analyze category distribution,
+* and identify highly reviewed restaurants and menu items.
+
+---
+
+### 3. Python Visualization & Insight Generation
+
+Python analysis included:
+
+* dataset exploration using pandas,
+* visualization using matplotlib and seaborn,
+* distribution analysis,
+* and generation of exploratory insights from visual patterns.
+
+Generated charts were exported into the `outputs/` folder for reporting and presentation purposes.
 
 ---
 
 ## 📊 Key Insights
 
-### 1. 🥇 Strong Presence of Complementary Menu Items
-Sambal-related menu items appear frequently in customer discussions, suggesting that complementary condiments play an important role in customer dining preferences and perceived meal satisfaction.
+### 🥇 Complementary Menu Items Appear Frequently in Reviews
 
-### 2. 🏆 Restaurant Brand Visibility
-Ocean Garden restaurants dominate review volume rankings, indicating strong brand visibility and customer engagement within Malang's culinary market.
+Sambal-related menu items appear frequently within customer reviews, suggesting that complementary side dishes play an important role in dining preferences.
 
-### 3. 📊 Balanced Menu Category Distribution
-- **Pendamping:** 38.6%
-- **Protein:** 31.6%
-- **Karbo:** 29.8%
+---
 
-The relatively balanced distribution suggests that restaurants in Malang offer diverse menu compositions rather than relying heavily on a single category.
+### 🏆 Several Restaurant Brands Dominate Review Volume
 
-### 4. 💰 Affordable Culinary Market Characteristics
-Most menu items fall below Rp25,000, indicating that affordability remains a dominant characteristic of Malang’s culinary ecosystem, potentially influenced by the city’s strong student population.
+Ocean Garden restaurants appear consistently within top review rankings, indicating strong visibility within the sampled dataset.
 
-### 5. ⭐ Consistent Restaurant Ratings
-Most restaurants maintain ratings above 4.0, suggesting relatively consistent customer satisfaction and service quality across the sampled establishments.
+---
+
+### 📊 Relatively Balanced Menu Category Distribution
+
+* **Pendamping:** 38.6%
+* **Protein:** 31.6%
+* **Karbo:** 29.8%
+
+The dataset shows relatively balanced menu composition across categories.
+
+---
+
+### 💰 Affordable Pricing Dominates the Dataset
+
+Most menu items fall below Rp25,000–Rp50,000, indicating that affordable and mid-range pricing dominates the culinary market within the dataset.
+
+---
+
+### ⭐ Most Restaurants Maintain Ratings Above 4.0
+
+The majority of restaurants maintain ratings above 4.0, suggesting generally positive customer satisfaction across sampled restaurants.
 
 ---
 
 ## 📸 Visualizations
 
-### Excel Analysis
+### Excel Pivot Table Analysis
 
 ![Excel Pivot Table](outputs/excel_pivot_table.png)
 
 <p align="justify">
 <em>
-Initial exploratory analysis in Excel highlighting menu category distribution and early pattern identification using pivot tables.
+Initial exploratory analysis using Microsoft Excel pivot tables to summarize menu categories and review patterns.
 </em>
 </p>
 
 ---
 
-### Python Visualizations
+## Python Visualizations
 
-#### Top 5 Most Mentioned Menu
+### Top 5 Most Mentioned Menus
 
 ![Top 5 Menus](outputs/top5_menus.png)
 
-*Visualization of menu items receiving the highest customer discussion frequency, indicating strong customer attention and popularity.*
+*Visualization of menu items with the highest review mentions.*
 
 ---
 
-#### Top 5 Most Popular Restaurants
+### Top 5 Restaurants by Total Reviews
 
 ![Top 5 Restaurants](outputs/top5_restaurants.png)
 
-*Comparison of restaurants based on total review volume, representing customer engagement and brand visibility.*
+*Comparison of restaurants based on total review volume.*
 
 ---
 
-#### Menu Distribution Categories
+### Menu Category Distribution
 
 ![Category Distribution](outputs/category_distribution.png)
 
-*Distribution of menu categories across the dataset, showing the balance between protein, carbohydrate, and complementary menu items.*
+*Distribution of menu categories within the dataset.*
 
 ---
 
-#### Price Segmentation
+### Price Segmentation Distribution
 
 ![Price Segmentation](outputs/price_segmentation.png)
 
-*Visualization of price distribution patterns, highlighting the dominance of affordable menu pricing within the market.*
+*Distribution of menu price segments across the dataset.*
 
 ---
 
-#### Rating Distribution
+### Rating Distribution
 
 ![Rating Distribution](outputs/rating_distribution.png)
 
-*Distribution of restaurant ratings across the dataset, indicating overall customer satisfaction trends.*
+*Distribution of restaurant ratings from the collected data.*
 
 ---
 
 ## 🚀 How to Reproduce This Analysis
 
-### Prerequisites
+### Install Python Dependencies
 
 ```bash
-# Install Python dependencies
 pip install -r requirements.txt
+```
 
-# MySQL database setup
+---
+
+### Setup MySQL Database
+
+```bash
 mysql -u root -p < scripts/sql_analysis/database_schema.sql
 ```
+
+---
 
 ### Run Python Analysis
 
 ```bash
 cd scripts/python_visualization
-python simple_analysis.py
+python basic-analysis.py
 ```
+
+---
 
 ### Run SQL Queries
 
@@ -205,39 +250,48 @@ SOURCE scripts/sql_analysis/simple_queries.sql;
 
 ## 📝 Learning Journey
 
-This project represents my current learning journey in data analysis and reflects my practical experience working with real-world culinary datasets.
+This project represents my current learning journey in exploratory data analysis using Excel, SQL, and Python.
 
 Through this project, I practiced:
-- Data cleaning and preprocessing using Excel
-- SQL querying and exploratory analysis using MySQL
-- Data visualization and insight generation using Python
-- Translating raw data into business-oriented insights
+
+* data cleaning and preprocessing,
+* SQL aggregation and filtering,
+* exploratory data analysis,
+* data visualization,
+* and translating raw data into structured insights.
 
 ### Learning Philosophy
 
-I believe in building strong fundamentals, documenting the learning process transparently, and continuously improving analytical thinking through hands-on projects.
+I believe in:
+
+* building strong fundamentals,
+* documenting the learning process transparently,
+* and improving analytical thinking through hands-on projects.
 
 ---
 
-## 📚 Methodology Documentation
+## 📚 Documentation
 
-Complete documentation of the learning and analysis process:
+Additional project documentation:
 
-- [Excel Processing Steps](scripts/excel_cleaning/data_cleaning_steps.md)
-- [SQL Learning Notes](scripts/sql_analysis/sql_learning_notes.md)
-- [Python Learning Notes](scripts/python_visualization/python_learning_notes.md)
+* [Excel Data Cleaning Workflow](scripts/excel_cleaning/data_cleaning_steps.md)
+* [SQL Learning Notes](scripts/sql_analysis/sql_learning_notes.md)
+* [Python Learning Journey](scripts/python_visualization/python_learning_journey.md)
 
 ---
 
-## 🤝 Contributing
+## ⚠️ Project Limitations
 
-This is a personal portfolio project. Feedback, suggestions, and discussions are welcome.
+* The dataset represents a single-time snapshot
+* Data was collected manually from publicly available Google Maps information
+* Analysis is descriptive and exploratory only
+* Advanced statistical analysis and machine learning were not included in this project
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ---
 
@@ -245,30 +299,28 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 
 **Fahrul Fauji**
 
-- Fresh Graduate in Information Technology
-- Published Researcher in Data Clustering and Information Systems
-- Research Publication: [Journal of Information System Research (JOSH)](https://doi.org/10.47065/josh.v6i3.6959)
+* Fresh Graduate in Information Technology
+* Published Researcher in Data Clustering and Information Systems
+
+### Research Publication
+
+* [Journal of Information System Research (JOSH)](https://doi.org/10.47065/josh.v6i3.6959)
 
 ### Connect With Me
-- [GitHub](https://github.com/fahrulfauji)
-- [LinkedIn](https://www.linkedin.com/in/fahrul-fauji-6729b8383/)
+
+* [GitHub](https://github.com/fahrulfauji)
+* [LinkedIn](https://www.linkedin.com/in/fahrul-fauji-6729b8383/)
 
 ---
 
-### 📌 Project Information
+## 📌 Project Information
 
-- Project Completion: January 2026
-- Tools Used: Python, Excel, MySQL
-- Dataset Type: Culinary Market Data
+* Project Completion: January 2026
+* Dataset Type: Culinary Market Data
+* Tools Used: Excel, MySQL, Python
 
 > *"Start simple, be honest, keep learning."*
 
 ---
 
-## 🔗 Quick Links
-
-- [View Full Project on GitHub](https://github.com/fahrulfauji/malang-food-analysis)
-
----
-
-⭐ If you find this project interesting or useful, feel free to give it a star on GitHub.
+⭐ If you find this project interesting, feel free to give it a star on GitHub.

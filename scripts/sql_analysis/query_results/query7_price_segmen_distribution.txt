@@ -1,0 +1,40 @@
+=========================================================
+QUERY 7 — PRICE SEGMENT DISTRIBUTION
+=========================================================
+
+SQL QUERY:
+----------
+
+SELECT
+    TRIM(REPLACE(Rentang_Harga, '\r', '')) AS price_range,
+    COUNT(*) AS total_menu_items,
+    ROUND(AVG(Rating), 2) AS average_rating
+FROM restaurants
+GROUP BY TRIM(REPLACE(Rentang_Harga, '\r', ''))
+ORDER BY total_menu_items DESC;
+
+EXECUTION RESULT:
+-----------------
+
++---------------------+-------------------+------------------+
+| price_range         | total_menu_items  | average_rating   |
++---------------------+-------------------+------------------+
+| Sedang (25-50K)     | 238               | 4.47             |
+| Murah (<25K)        | 92                | 4.49             |
+| Mahal (>50K)        | 42                | 4.53             |
++---------------------+-------------------+------------------+
+
+OBSERVATION:
+------------
+
+• Mid-price menus appear most frequently in the dataset
+• Higher-priced menus are less common
+• Average ratings remain relatively similar across price segments
+
+LEARNING NOTE:
+---------------
+
+This query helped me understand:
+• grouped analysis using categorical values,
+• basic text cleaning with TRIM() and REPLACE(),
+• and comparison between pricing segments.

@@ -4,16 +4,16 @@
 
 This project was designed as an exploratory end-to-end data analysis case study covering data collection, preprocessing, analysis, visualization, and insight generation.
 
-The analysis aims to identify culinary patterns and customer engagement trends within Malang City's restaurant market.
+The analysis aims to explore culinary patterns, pricing characteristics, and customer engagement trends within Malang City's restaurant market.
 
 ---
 
 ## 📊 Data Collection
 
-- **Source**: Google Maps (publicly available data)
-- **Collection Method**: Manual data collection
-- **Location**: Malang City, Indonesia
-- **Collection Period**: January 2026
+- **Source:** Google Maps (publicly available information)
+- **Collection Method:** Manual data collection
+- **Location:** Malang City, Indonesia
+- **Collection Period:** January 2026
 
 ### Dataset Size
 - 89 restaurants
@@ -39,6 +39,7 @@ The analysis aims to identify culinary patterns and customer engagement trends w
 ## ⚙️ Analysis Workflow
 
 ### 1. Data Cleaning & Preparation
+
 The preprocessing stage included:
 - text standardization,
 - missing value checking,
@@ -54,18 +55,18 @@ The analysis focused on:
 - pricing patterns,
 - rating distribution,
 - review volume analysis,
-- and comparison between menu categories.
+- and category comparison.
 
 ---
 
 ### 3. Visualization & Insight Generation
 
 Visualizations were created to:
-- identify customer behavior patterns,
 - simplify data interpretation,
-- and support business-oriented insight generation.
+- identify observable patterns,
+- and support exploratory insight generation.
 
-The findings were then summarized into exploratory business insights and recommendations.
+The findings were then summarized into simple business-oriented insights and recommendations.
 
 ---
 
@@ -79,7 +80,7 @@ Used for:
 
 ---
 
-### SQL (MySQL)
+### MySQL
 Used for:
 - database creation,
 - CSV data import,
@@ -102,7 +103,7 @@ Used for:
 - The dataset represents a single-time snapshot rather than time-series data.
 - The analysis is limited to descriptive and exploratory techniques.
 - Advanced statistical modeling and predictive analysis were outside the scope of this project.
-- The dataset consists of a single primary table structure.
+- The dataset uses a single primary table structure.
 
 ---
 
@@ -112,8 +113,8 @@ This project demonstrates the ability to:
 - perform structured data preprocessing,
 - combine Excel, SQL, and Python within one workflow,
 - conduct exploratory data analysis,
-- create data visualizations,
-- and translate raw data into business-oriented insights.
+- create visualizations,
+- and translate raw data into simple business-oriented insights.
 
 ---
 

@@ -2,65 +2,62 @@
 
 ## 📊 Project Overview
 
-This dataset contains 372 menu items from 89 restaurants in Malang City, collected from publicly available information on Google Maps.
+This dataset contains 372 menu items collected from 89 restaurants in Malang City using publicly available Google Maps information.
 
-The analysis focuses on identifying culinary patterns, customer engagement behavior, pricing characteristics, and restaurant rating trends within Malang’s culinary market.
+The analysis focuses on identifying pricing patterns, menu distribution, customer engagement trends, and restaurant rating characteristics within Malang’s culinary market.
 
 ---
 
 ## 📌 Main Findings
 
-### 1. Customer Preference Patterns
+### 1. Customer Engagement Patterns
 
-- Complementary menu items such as sambal frequently appear in customer discussions, suggesting that side dishes contribute significantly to overall dining satisfaction.
+- Complementary menu items such as sambal frequently appear in customer discussions, indicating that side dishes may play an important role in customer dining experiences.
 
-- Seafood-themed restaurants show relatively high review volumes, indicating strong customer interest and engagement within this category.
+- Seafood-themed restaurants show relatively high review volumes, suggesting strong customer interest within this category.
 
-- The majority of menu items are priced below Rp50,000, highlighting the importance of affordability within Malang’s culinary ecosystem.
+- Restaurants with higher review counts generally demonstrate stronger online visibility and customer engagement.
 
 ---
 
 ### 2. Pricing & Rating Observations
 
-- Most restaurants maintain ratings above 4.0, indicating relatively consistent customer satisfaction across the sampled establishments.
+- Most menu items are priced below Rp50,000, indicating that affordable pricing dominates the sampled culinary market.
 
-- No significant relationship was observed between menu pricing and restaurant ratings within this dataset.
+- Most restaurants maintain ratings above 4.0, suggesting relatively consistent customer satisfaction across the dataset.
 
-- Higher pricing does not necessarily correspond to higher customer satisfaction, suggesting that factors beyond price may influence customer perception and experience.
+- No clear relationship was observed between higher menu pricing and higher restaurant ratings.
 
 ---
 
 ### 3. Menu Category Distribution
 
 The dataset shows a relatively balanced distribution across menu categories:
-
 - Protein-based menus
 - Carbohydrate-based menus
 - Complementary / side-dish menus
 
-This distribution suggests that menu diversity is a common characteristic among restaurants included in the analysis.
+This suggests that restaurants in the dataset generally offer diverse menu compositions rather than focusing heavily on a single category.
 
 ---
 
 ## 🚀 Analytical Contributions
 
 Through this project, the analysis demonstrates the ability to:
-
-- Perform data cleaning and preprocessing
-- Conduct exploratory data analysis (EDA)
-- Use SQL for aggregation and filtering
-- Generate visualizations using Python
-- Translate raw data into business-oriented insights
-- Document a structured end-to-end analytical workflow
+- perform data cleaning and preprocessing,
+- conduct exploratory data analysis (EDA),
+- use SQL for filtering and aggregation,
+- create visualizations using Python,
+- and translate raw data into simple business-oriented insights.
 
 ---
 
 ## ⚠️ Limitations
 
-- The dataset represents a snapshot rather than time-series data.
-- The data was collected from publicly available Google Maps information and may contain platform-related bias.
+- The dataset represents a single-time snapshot rather than time-series data.
+- The data was manually collected from publicly available Google Maps information.
 - The analysis is limited to descriptive and exploratory techniques.
-- Advanced statistical modeling and predictive analysis were not included within the scope of this project.
+- Advanced statistical analysis and predictive modeling were outside the scope of this project.
 
 ---
 

@@ -1,0 +1,55 @@
+=========================================================
+QUERY 3 — AVERAGE PRICE BY MENU CATEGORY
+=========================================================
+
+Objective:
+Compare average menu pricing across different menu categories.
+
+---------------------------------------------------------
+SQL QUERY
+---------------------------------------------------------
+
+SELECT
+    Kategori_Menu AS menu_category,
+    ROUND(AVG(Harga_Rata_Rata), 0) AS average_price
+FROM restaurants
+GROUP BY Kategori_Menu
+ORDER BY average_price DESC;
+
+---------------------------------------------------------
+EXECUTION RESULT
+---------------------------------------------------------
+
++---------------+----------------+
+| menu_category | average_price  |
++---------------+----------------+
+| Protein       | 36652          |
+| Karbo         | 35335          |
+| Pendamping    | 32779          |
++---------------+----------------+
+
+---------------------------------------------------------
+RESULT SUMMARY
+---------------------------------------------------------
+
+• Protein category has the highest average price
+• Karbo category appears in the middle price range
+• Pendamping category has the lowest average price
+
+---------------------------------------------------------
+BASIC INTERPRETATION
+---------------------------------------------------------
+
+Protein-based menu items tend to be priced slightly higher
+than other categories within the dataset.
+
+The price differences between categories are relatively moderate,
+indicating that most menu items remain within affordable-to-mid
+price ranges.
+
+---------------------------------------------------------
+NOTE
+---------------------------------------------------------
+
+This analysis is descriptive only and does not account for
+restaurant scale, ingredient quality, or operational costs.

@@ -1,0 +1,57 @@
+=========================================================
+QUERY 2 — MENU CATEGORY DISTRIBUTION
+=========================================================
+
+Objective:
+Analyze the distribution of menu categories within the dataset.
+
+---------------------------------------------------------
+SQL QUERY
+---------------------------------------------------------
+
+SELECT
+    Kategori_Menu AS menu_category,
+    COUNT(*) AS total_menu_items,
+    ROUND(COUNT(*) * 100.0 / (
+        SELECT COUNT(*) FROM restaurants
+    ), 1) AS percentage_distribution
+FROM restaurants
+GROUP BY Kategori_Menu
+ORDER BY total_menu_items DESC;
+
+---------------------------------------------------------
+EXECUTION RESULT
+---------------------------------------------------------
+
++---------------+-------------------+--------------------------+
+| menu_category | total_menu_items  | percentage_distribution  |
++---------------+-------------------+--------------------------+
+| Protein       | 132               | 35.5%                    |
+| Pendamping    | 131               | 35.2%                    |
+| Karbo         | 109               | 29.3%                    |
++---------------+-------------------+--------------------------+
+
+---------------------------------------------------------
+RESULT SUMMARY
+---------------------------------------------------------
+
+• Protein category contains the largest number of menu items
+• Pendamping category appears in a similar proportion
+• Karbo category contains the lowest number of menu items
+
+---------------------------------------------------------
+BASIC INTERPRETATION
+---------------------------------------------------------
+
+The dataset shows a relatively balanced distribution across
+menu categories.
+
+This may indicate that restaurants in the dataset offer
+diverse menu compositions rather than focusing heavily on
+a single category.
+
+---------------------------------------------------------
+NOTE
+---------------------------------------------------------
+
+This analysis is descriptive and based only on the sampled dataset.

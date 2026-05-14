@@ -1,84 +1,283 @@
-# 📘 SQL Learning Journey - Beginner Level
+````
+# 📘 SQL Learning Journey — Beginner SQL Exploration
 
-## My Current SQL Skill Level
-**Comfortable With**: Basic SELECT, COUNT, GROUP BY, ORDER BY, LIMIT  
-**Learning Now**: AVG(), ROUND(), MAX() with GROUP BY  
-**Next Goals**: JOINs, subqueries, window functions  
+## 📌 Current SQL Skill Level
 
-## What I Learned From This Project
+### Comfortable With
+- SELECT statements
+- WHERE filtering
+- COUNT(), AVG(), MAX()
+- GROUP BY
+- ORDER BY
+- LIMIT
+- Basic data aggregation
 
-### 1. Basic SQL Operations Mastered:
-- ✅ **Counting data**: `SELECT COUNT(*) FROM table`
-- ✅ **Grouping data**: `GROUP BY` with categories
-- ✅ **Aggregation**: `AVG()`, `MAX()` for numerical analysis
-- ✅ **Sorting results**: `ORDER BY DESC/ASC`
-- ✅ **Limiting output**: `LIMIT` for top-N analysis
+### Currently Learning
+- HAVING clause
+- CASE WHEN
+- Subqueries
+- Multi-condition filtering
+- More structured analytical queries
 
-### 2. Practical Business Questions Answered:
-1. **How much data do we have?** → COUNT() query
-2. **How are items distributed?** → GROUP BY query
-3. **What are the average prices?** → AVG() with GROUP BY
-4. **Who are the top performers?** → ORDER BY + LIMIT
-5. **How is quality distributed?** → ROUND() with GROUP BY
+### Future Learning Goals
+- JOIN operations
+- Common Table Expressions (CTE)
+- Window Functions
+- Query optimization
+- More advanced business-oriented analysis
 
-### 3. Technical Skills Demonstrated:
-- Database schema creation
-- CSV data import to MySQL
-- Writing and executing SQL queries
-- Interpreting query results
-- Documenting the analysis process
+---
 
-## Query-by-Query Learning Points
+# 🎯 What I Learned From This Project
 
-### Query 1: Simple Counting
+This project helped me understand how SQL can be used to transform raw restaurant data into structured analytical insights.
+
+The analysis focused on:
+- Data aggregation
+- Category analysis
+- Review distribution
+- Pricing analysis
+- Restaurant popularity
+
+---
+
+# ✅ SQL Skills Demonstrated
+
+## 1. Data Aggregation
+
+Used aggregation functions to summarize restaurant and menu data.
+
+Examples:
+- COUNT()
+- AVG()
+- MAX()
+- ROUND()
+
+---
+
+## 2. Categorical Analysis
+
+Used `GROUP BY` to analyze:
+- Menu categories
+- Rating distribution
+- Price segmentation
+
+This helped identify common patterns within the dataset.
+
+---
+
+## 3. Ranking & Sorting
+
+Used:
+- ORDER BY
+- LIMIT
+
+to identify:
+- Highly reviewed restaurants
+- Most discussed menu items
+
+---
+
+## 4. Analytical Thinking
+
+Translated business-related questions into SQL queries.
+
+Examples:
+- Which menu categories dominate?
+- Which restaurants receive the most reviews?
+- How are menu prices distributed?
+- Do higher prices relate to higher ratings?
+
+---
+
+# 🔍 Query-by-Query Learning Notes
+
+## Query 1 — Dataset Overview
+
 ```sql
-SELECT COUNT(*) AS total_menu FROM restaurants;
+SELECT
+    COUNT(*) AS total_menu_items,
+    COUNT(DISTINCT Nama_Tempat) AS total_restaurants
+FROM restaurants;
+````
+
+### Learning Outcome
+
+Learned how to:
+
+* Measure dataset size
+* Count unique entities
+* Validate imported data
+
+---
+
+## Query 2 — Menu Category Distribution
+
+```sql
+SELECT
+    Kategori_Menu,
+    COUNT(*) AS total_menu_items
+FROM restaurants
+GROUP BY Kategori_Menu;
 ```
-**Learning**: Most fundamental SQL operation - verifying data completeness.
 
-### Query 2: Categorical Distribution
+### Learning Outcome
+
+Learned how to:
+
+* Group categorical data
+* Generate category summaries
+* Understand distribution patterns
+
+---
+
+## Query 3 — Average Price Analysis
+
 ```sql
-SELECT Kategori_Menu, COUNT(*) FROM restaurants GROUP BY Kategori_Menu;
+SELECT
+    Kategori_Menu,
+    AVG(Harga_Rata_Rata) AS average_price
+FROM restaurants
+GROUP BY Kategori_Menu;
 ```
-**Learning**: How to summarize data by categories using GROUP BY.
 
-### Query 3: Numerical Aggregation
-```sql
-SELECT Kategori_Menu, AVG(Harga_Rata_Rata) FROM restaurants GROUP BY Kategori_Menu;
-```
-**Learning**: Calculating averages within groups.
+### Learning Outcome
 
-### Query 4: Ranking & Sorting
+Learned how to:
+
+* Calculate averages
+* Compare categories numerically
+* Perform basic pricing analysis
+
+---
+
+## Query 4 — Top Restaurants by Reviews
+
 ```sql
-SELECT Nama_Tempat, MAX(Jumlah_Total_Ulasan) 
-FROM restaurants 
-GROUP BY Nama_Tempat 
-ORDER BY ... DESC 
+SELECT
+    Nama_Tempat,
+    MAX(Jumlah_Total_Ulasan) AS total_reviews
+FROM restaurants
+GROUP BY Nama_Tempat
+ORDER BY total_reviews DESC
 LIMIT 5;
 ```
-**Learning**: Finding top performers with sorting and limiting.
 
-### Query 5: Data Transformation
+### Learning Outcome
+
+Learned how to:
+
+* Rank data
+* Sort analytical results
+* Identify highly reviewed restaurants
+
+---
+
+## Query 5 — Rating Distribution
+
 ```sql
-SELECT ROUND(Rating, 1), COUNT(*) 
-FROM restaurants 
+SELECT
+    ROUND(Rating, 1) AS rating_score,
+    COUNT(*) AS total_records
+FROM restaurants
 GROUP BY ROUND(Rating, 1);
 ```
-**Learning**: Modifying data (rounding) before grouping.
 
-## Challenges & Solutions
+### Learning Outcome
 
-### Challenge 1: Understanding GROUP BY
-Initially confused about when to use GROUP BY vs simple SELECT.
+Learned how to:
 
-**Solution**: Practiced with simple datasets until I understood that GROUP BY is for categorical summaries.
+* Transform numeric data
+* Use ROUND() for cleaner grouping
+* Analyze score distributions
 
-### Challenge 2: Importing CSV Data
-The `LOAD DATA INFILE` had issues with file paths and permissions.
+---
 
-**Solution**: Learned about MySQL's secure_file_priv setting and proper file path formatting.
+# ⚠️ Challenges Faced During the Project
 
-### Challenge 3: Query Result Interpretation
-Numbers without context weren't meaningful.
+## Challenge 1 — Understanding GROUP BY
 
-**Solution**: Added analysis sections to explain what the results mean for business decisions.
+Initially, I was confused about:
+
+* When GROUP BY is necessary
+* Why aggregation functions require grouping
+
+### Solution
+
+Practiced with smaller examples until I understood how grouped summaries work.
+
+---
+
+## Challenge 2 — CSV Import Issues
+
+I experienced problems with:
+
+* File paths
+* MySQL permissions
+* `LOAD DATA INFILE`
+
+### Solution
+
+Learned about:
+
+* `secure_file_priv`
+* Proper CSV formatting
+* MySQL import configuration
+
+---
+
+## Challenge 3 — Interpreting Query Results
+
+At first, query outputs felt like just numbers without meaning.
+
+### Solution
+
+Focused on connecting SQL results to:
+
+* Customer behavior
+* Restaurant trends
+* Pricing patterns
+* Business interpretation
+
+---
+
+# 🧠 Key Takeaways
+
+Through this project, I learned that SQL is not only about retrieving data, but also about:
+
+* Structuring information
+* Finding patterns
+* Supporting analytical thinking
+* Translating raw data into insights
+
+---
+
+# 🚀 Next Improvement Targets
+
+The next version of this project may include:
+
+* More advanced filtering
+* Basic relationship analysis
+* Multi-table relational design
+* SQL JOIN operations
+* Window functions
+* Better analytical storytelling
+
+---
+
+# 📚 Learning Reflection
+
+This project represents my early-stage SQL learning journey.
+
+Rather than focusing on complex techniques immediately, I focused on:
+
+* Understanding fundamentals
+* Writing readable queries
+* Building analytical habits
+* Documenting the learning process clearly
+
+---
+
+*This document reflects a beginner-level SQL learning journey built through a real exploratory data analysis project.*
+
+```

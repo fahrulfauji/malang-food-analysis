@@ -1,0 +1,51 @@
+=========================================================
+QUERY 1 — TOTAL DATA OVERVIEW
+=========================================================
+
+Objective:
+Measure dataset size and restaurant coverage.
+
+---------------------------------------------------------
+SQL QUERY
+---------------------------------------------------------
+
+SELECT
+    COUNT(*) AS total_menu_items,
+    COUNT(DISTINCT Nama_Tempat) AS total_restaurants
+FROM restaurants;
+
+---------------------------------------------------------
+EXECUTION RESULT
+---------------------------------------------------------
+
++-------------------+----------------------+
+| total_menu_items  | total_restaurants    |
++-------------------+----------------------+
+| 372               | 89                   |
++-------------------+----------------------+
+
+---------------------------------------------------------
+RESULT SUMMARY
+---------------------------------------------------------
+
+• Total menu items analyzed: 372
+• Total unique restaurants: 89
+• Dataset structure is organized at menu-item level
+
+---------------------------------------------------------
+BASIC INTERPRETATION
+---------------------------------------------------------
+
+The dataset contains multiple menu entries for each restaurant,
+allowing analysis at both restaurant level and menu-item level.
+
+This structure supports:
+- menu category analysis,
+- pricing analysis,
+- and customer review exploration.
+
+---------------------------------------------------------
+NOTE
+---------------------------------------------------------
+
+This result reflects descriptive exploratory analysis only.

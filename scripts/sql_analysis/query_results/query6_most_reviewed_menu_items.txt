@@ -1,0 +1,55 @@
+=========================================================
+QUERY 6 — MOST REVIEWED MENU ITEMS
+=========================================================
+
+Objective:
+Identify menu items with the highest review mention volume.
+
+---------------------------------------------------------
+SQL QUERY
+---------------------------------------------------------
+
+SELECT
+    Menu AS menu_item,
+    SUM(Jumlah_Ulasan_Menu) AS total_menu_reviews
+FROM restaurants
+GROUP BY Menu
+ORDER BY total_menu_reviews DESC
+LIMIT 10;
+
+---------------------------------------------------------
+EXECUTION RESULT
+---------------------------------------------------------
+
++-------------+----------------------+
+| menu_item   | total_menu_reviews   |
++-------------+----------------------+
+| Sambal      | 1352                 |
+| Rawon       | 731                  |
+| Gurami      | 704                  |
+| Nasi Goreng | 404                  |
+| Lalapan     | 399                  |
+| Cwie Mie    | 345                  |
+| Lumpia      | 306                  |
+| Pecel       | 267                  |
+| Empal       | 260                  |
+| Cumi        | 245                  |
++-------------+----------------------+
+
+---------------------------------------------------------
+RESULT SUMMARY
+---------------------------------------------------------
+
+• Sambal has the highest review mention volume in the dataset
+• Traditional Indonesian menu items appear frequently in the ranking
+• Several complementary and staple foods show relatively high review activity
+
+---------------------------------------------------------
+LEARNING NOTE
+---------------------------------------------------------
+
+This query helped me practice:
+• aggregation using SUM(),
+• grouping menu-level data,
+• ranking results with ORDER BY and LIMIT,
+• and analyzing review activity patterns using SQL.
